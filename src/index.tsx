@@ -1,13 +1,14 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect, useRef } from "react";
 import * as esbuild from "esbuild-wasm";
+import { unpkgPathPlugin } from "./plugins/unpkg-path-plugin";
 
 const App = () => {
   const ref = useRef<any>();
   const [input, setInput] = useState("");
   const [code, setCode] = useState("");
 
-  // initialization
+  // initialization ESbuild
   const startService = async () => {
     ref.current = await esbuild.startService({
       worker: true,
@@ -22,12 +23,24 @@ const App = () => {
     if (!ref.current) {
       return;
     }
-
-    const result = await ref.current.transform(input, {
-      loader: "jsx",
-      target: "es2015",
+    // const result = await ref.current.transform(input, {
+    //   loader: "jsx",
+    //   target: "es2015",
+    // });
+    const result = await ref.current.build({
+      entryPoints: ["index.js"],
+      bundle: true,
+      write: false,
+      plugins: [unpkgPathPlugin()],
+      define: {
+        "process.env.NODE_ENV": '"production"',
+        global: "window",
+      },
     });
-    setCode(result.code);
+
+    // console.log(result);
+
+    setCode(result.outputFiles[0].text);
   };
 
   return (
