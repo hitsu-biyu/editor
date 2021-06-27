@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom";
+import CellList from "./components/cell-list";
 import { Provider } from "react-redux";
 import { store } from "./state";
 import "bulmaswatch/superhero/bulmaswatch.min.css";
-import CellList from "./components/cell-list";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const App = () => {
   return (
