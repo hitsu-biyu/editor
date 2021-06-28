@@ -1,17 +1,16 @@
 # MyNote
 
-MyNote は、ブラウザベースのコードとマークダウンエディタです。
+MyNote は、ブラウザベースのJavaScript/React/Markdownのエディタです。
 
-## Code Editor
+## JavaScript/React Editor
 
 - ユーザーが作成した jsx コードは、CodePen と同様にブラウザ上で安全に実行されます。
-- VScode と同じエディターを使います。
-- 簡単に`Format`できます。
+- 簡単に`Format`ボタンを押すことでコードのフォーマットができます。
 
 ![Code Editor](https://user-images.githubusercontent.com/83121440/123583153-194a9680-d81a-11eb-892f-2213790bb0e2.png)
 
 
-## Text Editor
+## Markdown Editor
 
 - シンプルなマークダウンエディタで、簡単にメモが取れます。
 
