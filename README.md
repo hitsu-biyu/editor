@@ -1,6 +1,6 @@
 # MyNote
 
-MyNote は、ブラウザベースのJavaScript/React/Markdownのエディタです。
+MyNote は、ブラウザベースの JavaScript/React/Markdown のエディタです。
 
 ## JavaScript/React Editor
 
@@ -8,7 +8,6 @@ MyNote は、ブラウザベースのJavaScript/React/Markdownのエディタで
 - 簡単に`Format`ボタンを押すことでコードのフォーマットができます。
 
 ![Code Editor](https://user-images.githubusercontent.com/83121440/123583153-194a9680-d81a-11eb-892f-2213790bb0e2.png)
-
 
 ## Markdown Editor
 
