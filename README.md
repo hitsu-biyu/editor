@@ -1,6 +1,7 @@
 # MyNote
 
 MyNote は、ブラウザベースの JavaScript/React/Markdown のエディタです。
+このプロジェクトはこちらの [GitHub Pages](https://hitsu-biyu.github.io/mynote/) にホスティングされています。
 
 ## JavaScript/React Editor
 
